@@ -72,6 +72,7 @@ RUN ./download_models.sh
 RUN wget -O weights/yolov3-tiny-20000.weights https://trainingweight.imfast.io/yolov3-tiny-20000.weights
 
 # Entry
+RUN chmod +x runserver.sh
 CMD ["./runserver.sh"]
 ##CMD ["bash"]
 
