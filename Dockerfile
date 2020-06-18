@@ -64,12 +64,12 @@ ENV CUDA_HOME=/usr/local/cuda
 ENV OPENCV 1
 RUN python3 setup.py build_ext --inplace
 
-# Download Tiny weights
-RUN wget -O weights/yolov3-tiny-20000.weights https://trainingweight.imfast.io/yolov3-tiny-20000.weights
-
 ## Download models
 RUN chmod +x download_models.sh
 RUN ./download_models.sh
+
+# Download Tiny weights
+RUN wget -O weights/yolov3-tiny-20000.weights https://trainingweight.imfast.io/yolov3-tiny-20000.weights
 
 # Extract
 #RUN unzip 0dockerstuff.zip
