@@ -71,13 +71,6 @@ RUN ./download_models.sh
 # Download Tiny weights
 RUN wget -O weights/yolov3-tiny-20000.weights https://trainingweight.imfast.io/yolov3-tiny-20000.weights
 
-# Extract
-#RUN unzip 0dockerstuff.zip
-#RUN rm 0dockerstuff.zip
-
-## Run flask-endpoint here ##
-#ADD ./api.py /YOLO/api.py
-
 # Entry
 CMD ["./runserver.sh"]
 ##CMD ["bash"]
