@@ -24,7 +24,8 @@ The device needs to have NVIDIA drivers installed to work.
 
 ### Port forwarding
 
-You've to set port forwarding up on your router, so that a client can communicate with the server.
+You've to set port forwarding up on your router, so that a client can communicate with the server. Preferably you forward port
+6969 to 6969, then it fits the Flask server script.
 
 ## How to
 
