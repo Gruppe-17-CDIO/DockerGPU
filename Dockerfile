@@ -53,7 +53,7 @@ RUN make -j7
 
 ## Download and compile YOLO ##
 WORKDIR /
-RUN git clone https://github.com/JustusGammelgaard/YOLO.git
+RUN git clone https://github.com/Gruppe-17-CDIO/YOLO.git
 WORKDIR /YOLO
 RUN git checkout DockerYOLO
 RUN git pull
